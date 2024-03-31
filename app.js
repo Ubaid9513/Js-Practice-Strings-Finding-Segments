@@ -1,4 +1,4 @@
-document.write = "My name is Ubaid Aslam";
+text = "My name is Ubaid Aslam";
 for (var i = 0; i < text.length; i++){
     document.write(text.slice(i,i + 5 ));
 }
@@ -132,3 +132,12 @@ console.log(num.toString());
 
 var num = (2.412125);
 console.log(num.toFixed(5));
+
+
+var randomVal = "sdnqwiajdbsxq1244jbjb1244nkj7m3b7l8!$C%GY^*(GN(^_)+(&%";
+var pass = ("");
+for (var i = 0; i<8; i++){
+    var randomNum = Math.floor(Math.random() * randomVal.length);
+    pass += randomVal[randomNum];
+}
+console.log(pass,pass.length);
